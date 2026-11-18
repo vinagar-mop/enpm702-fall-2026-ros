@@ -44,6 +44,8 @@ include_directories(include)
 # TODO (R6): needs mission_main.cpp and mission_node.cpp.
 # add_executable(mission_exe src/mission_main.cpp src/mission_node.cpp)
 # ament_target_dependencies(mission_exe rclcpp sensor_msgs gp1_interfaces)
+add_executable(mission_exe src/mission_main.cpp src/mission_node.cpp)
+ament_target_dependencies(mission_exe rclcpp sensor_msgs gp1_interfaces)
 
 # TODO (R6): needs operator_main.cpp and operator_node.cpp.
 # add_executable(operator_exe src/operator_main.cpp src/operator_node.cpp)
