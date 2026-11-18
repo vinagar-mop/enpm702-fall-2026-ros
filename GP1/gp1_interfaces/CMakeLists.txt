@@ -14,9 +14,9 @@ find_package(rosidl_default_generators REQUIRED)
 # the call below runs only when at least one file is listed: the package builds
 # empty until then.
 set(GP1_MESSAGE_FILES
-  # "msg/Arrival.msg"
-  # "msg/InspectionReport.msg"
-  # "msg/StopCommand.msg"
+  "msg/Arrival.msg"
+  "msg/InspectionReport.msg"
+  "msg/StopCommand.msg"
 )
 
 # Generates C++ and Python code for each interface file.
