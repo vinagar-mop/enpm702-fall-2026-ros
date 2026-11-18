@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>GP1 Patrol and Inspect: a stand-in robot, navigation, mission, patrol log and operator nodes.</description>
   <!-- TODO: replace these three lines with each team member's name and email. -->
-  <maintainer email="member1@umd.edu">TODO Member 1</maintainer>
+  <maintainer email="jacobct@umd.edu">Jacob Collier-Tenison</maintainer>
   <maintainer email="member2@umd.edu">TODO Member 2</maintainer>
   <maintainer email="member3@umd.edu">TODO Member 3</maintainer>
   <license>Apache-2.0</license>

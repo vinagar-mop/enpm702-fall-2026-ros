@@ -20,8 +20,7 @@ find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
-# TODO (R1): uncomment once gp1_interfaces builds with your messages.
-# find_package(gp1_interfaces REQUIRED)
+find_package(gp1_interfaces REQUIRED)
 
 include_directories(include)
 
