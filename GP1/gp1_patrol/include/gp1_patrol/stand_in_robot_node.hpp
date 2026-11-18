@@ -8,7 +8,7 @@
 
 namespace gp1_patrol {
 
-class StandInRobotNode : public rclcpp:: Node {
+class StandInRobotNode : public rclcpp::Node {
     public:
         StandInRobotNode() 
         : rclcpp::Node("stand_in_robot_node"), 
