@@ -7,7 +7,7 @@
   <!-- TODO: replace these three lines with each team member's name and email. -->
   <maintainer email="jacobct@umd.edu">Jacob Collier-Tenison</maintainer>
   <maintainer email="member2@umd.edu">TODO Member 2</maintainer>
-  <maintainer email="member3@umd.edu">TODO Member 3</maintainer>
+  <maintainer email="vinagar2@umd.edu">Vinay Agarwal</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
