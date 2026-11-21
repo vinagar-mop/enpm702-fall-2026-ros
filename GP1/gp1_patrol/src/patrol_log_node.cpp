@@ -1,3 +1,9 @@
+/**
+ * @file patrol_log_node.cpp
+ * @author Jacob Collier-Tenison (jacobct@umd.edu)
+ * @brief Definitions of functions from patrol_log_node.hpp
+ * 
+ */
 #include "gp1_patrol/patrol_log_node.hpp"
 
 #include <cmath>

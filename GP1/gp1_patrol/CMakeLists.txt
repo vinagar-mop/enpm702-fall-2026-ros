@@ -24,52 +24,30 @@ find_package(gp1_interfaces REQUIRED)
 
 include_directories(include)
 
-# TODO (R2): needs stand_in_robot_main.cpp and stand_in_robot_node.cpp.
 add_executable(stand_in_robot_exe src/stand_in_robot_main.cpp
   src/stand_in_robot_node.cpp)
 ament_target_dependencies(stand_in_robot_exe rclcpp geometry_msgs nav_msgs
   sensor_msgs gp1_interfaces)
 
-# TODO (R5): needs patrol_single_main.cpp, navigation_node.cpp, patrol_log_node.cpp.
 add_executable(patrol_single_exe src/patrol_single_main.cpp
    src/navigation_node.cpp src/patrol_log_node.cpp)
 ament_target_dependencies(patrol_single_exe rclcpp geometry_msgs nav_msgs
    gp1_interfaces)
 
-# TODO (R5): needs patrol_main.cpp, navigation_node.cpp, patrol_log_node.cpp.
 add_executable(patrol_exe src/patrol_main.cpp
    src/navigation_node.cpp src/patrol_log_node.cpp)
 ament_target_dependencies(patrol_exe rclcpp geometry_msgs nav_msgs gp1_interfaces)
 
-# TODO (R6): needs mission_main.cpp and mission_node.cpp.
-# add_executable(mission_exe src/mission_main.cpp src/mission_node.cpp)
-# ament_target_dependencies(mission_exe rclcpp sensor_msgs gp1_interfaces)
 add_executable(mission_exe src/mission_main.cpp src/mission_node.cpp)
 ament_target_dependencies(mission_exe rclcpp sensor_msgs gp1_interfaces)
 
-# TODO (R6): needs operator_main.cpp and operator_node.cpp.
 add_executable(operator_exe src/operator_main.cpp src/operator_node.cpp)
 ament_target_dependencies(operator_exe rclcpp gp1_interfaces)
 
-# TODO (R2, R5, R6): uncomment, and delete the executables you have not written yet.
-install(TARGETS
+install(TARGETS stand_in_robot_exe patrol_single_exe patrol_exe mission_exe
   operator_exe
   DESTINATION lib/${PROJECT_NAME})
 
-# TODO Delete when above line is uncommented
-install(TARGETS stand_in_robot_exe
-  DESTINATION lib/${PROJECT_NAME})
-
-install(TARGETS patrol_single_exe
-  DESTINATION lib/${PROJECT_NAME})
-
-install(TARGETS patrol_exe
-  DESTINATION lib/${PROJECT_NAME})
-
-install(TARGETS mission_exe
-  DESTINATION lib/${PROJECT_NAME})
-
-# R7: your two launch files go in launch/.
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 

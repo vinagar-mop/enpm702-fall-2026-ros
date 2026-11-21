@@ -1,3 +1,9 @@
+/**
+ * @file stand_in_robot_node.cpp
+ * @author Jacob Collier-Tenison (jacobct@umd.edu)
+ * @brief Definitions of functions in stand_in_robot.hpp
+ * 
+ */
 #include "gp1_patrol/stand_in_robot_node.hpp"
 #include "gp1_patrol/geometry.hpp"
 #include "gp1_patrol/checkpoints.hpp"
