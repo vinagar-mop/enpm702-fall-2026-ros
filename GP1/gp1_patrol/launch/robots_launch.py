@@ -1,8 +1,10 @@
 from launch import LaunchDescription
-from launch.actions import GroupAction, DeclareLaunchArgument, IfCondition, LaunchConfiguration
+from launch.actions import GroupAction, DeclareLaunchArgument
 from launch_ros.actions import Node, PushROSNamespace
+from launch.conditions import IfCondition
+from launch.substitutions import LaunchConfiguration
 
-def one_robot (namespace, option):
+def one_robot (namespace, option=None):
     return GroupAction (
         [
             PushROSNamespace(namespace),
@@ -13,15 +15,14 @@ def one_robot (namespace, option):
     )
 
 def generate_launch_description():
-    ld = LaunchDescription();
+    ld = LaunchDescription()
     two_robots = DeclareLaunchArgument(
         "two_robots",
         default_value="false",
-        description="Launching two robots",
-        condition=IfCondition(LaunchConfiguration("with_dispatcher"))
+        description="Launching two robots"    
     ) 
     
     ld.add_action(two_robots)
     ld.add_action(one_robot("robot_1"))
-    ld.add_action(one_robot("robot_2"),two_robots=True)
+    ld.add_action(one_robot("robot_2", IfCondition(LaunchConfiguration("two_robots"))))
     return ld
