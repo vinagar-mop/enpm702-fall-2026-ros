@@ -1,5 +1,8 @@
 #include "gp1_patrol/patrol_log_node.hpp"
+
 #include <cmath>
+#include <chrono>
+#include <thread>
 
 namespace gp1_patrol {
 
@@ -16,6 +19,10 @@ void PatrolLogNode::update_counts(const gp1_interfaces::msg::InspectionReport &m
     }
 }
 void PatrolLogNode::log() {
+
+    // Simulate the slow logging for R5 (1.5 seconds)
+    std::this_thread::sleep_for(std::chrono::milliseconds{1500});
+
     RCLCPP_INFO_STREAM(get_logger(), "patrol log: clear  " << clear_count_ << ", blocked " << blocked_count_ << ", door open " << door_open_count_ << ", door closed " << door_closed_count_);
 }
 
