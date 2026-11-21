@@ -1,0 +1,42 @@
+[INFO] [1795289337.207242985] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[INFO] [1795289339.207144266] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[INFO] [1795289341.207275680] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[INFO] [1795289342.101395878] [robot_1.navigation_node]: arrived at checkpoint 1
+[INFO] [1795289342.102136482] [robot_1.navigation_node]: Inspection complete for checkpoint 1. Advancing.
+[INFO] [1795289343.207158994] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[INFO] [1795289345.207362619] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289347.207581353] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289349.207336501] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289351.207201552] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289353.207596534] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289354.700976423] [robot_1.navigation_node]: arrived at checkpoint 2
+[INFO] [1795289354.701832248] [robot_1.navigation_node]: Inspection complete for checkpoint 2. Advancing.
+[INFO] [1795289355.207299350] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[INFO] [1795289357.207215068] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289359.207218394] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289361.207529451] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289362.703876135] [robot_1.navigation_node]: STOP (operator stop) received 0.3 ms after it was sent
+[INFO] [1795289363.207802694] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289365.207619015] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289367.207472854] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289367.704722675] [robot_1.navigation_node]: RESUME (operator resume) received 0.6 ms after it was sent
+[INFO] [1795289369.207158157] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289371.207574110] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289372.401357242] [robot_1.navigation_node]: arrived at checkpoint 3
+[INFO] [1795289372.402078629] [robot_1.navigation_node]: Inspection complete for checkpoint 3. Advancing.
+[INFO] [1795289373.207307153] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[INFO] [1795289375.207633336] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289377.207378119] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289379.207587918] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289381.207549549] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289383.207288316] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289385.000962495] [robot_1.navigation_node]: arrived at checkpoint 4
+[INFO] [1795289385.001696949] [robot_1.navigation_node]: Inspection complete for checkpoint 4. Advancing.
+[INFO] [1795289385.001771234] [robot_1.navigation_node]: patrol complete
+[INFO] [1795289385.207508517] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[INFO] [1795289387.207540336] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[INFO] [1795289389.207284119] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[INFO] [1795289391.207960857] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[INFO] [1795289393.207562528] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[INFO] [1795289395.207452370] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[INFO] [1795289397.207471763] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
