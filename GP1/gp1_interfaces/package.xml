@@ -4,7 +4,6 @@
   <name>gp1_interfaces</name>
   <version>0.0.0</version>
   <description>Interfaces of GP1 Patrol and Inspect: Arrival, InspectionReport and StopCommand.</description>
-  <!-- TODO: replace these three lines with each team member's name and email. -->
   <maintainer email="jacobct@umd.edu">Jacob Collier-Tenison</maintainer>
   <maintainer email="aschug@umd.edu">Andrew Schug</maintainer>
   <maintainer email="vinagar2@umd.edu">Vinay Agarwal</maintainer>
