@@ -1,4 +1,14 @@
-
+/**
+ * @file navigation_node.cpp
+ * @author Andrew Schug (aschug@umd.edu) 
+ * @brief Implementations of the function declared in navigation_node.hpp to navigate through the 
+ * four checkpoints using odometry.
+ * @version 0.1
+ * @date 2026-11-23
+ * 
+ * @copyright Copyright (c) 2026
+ * 
+ */
 #include "gp1_patrol/navigation_node.hpp"
 #include "gp1_patrol/checkpoints.hpp"
 #include "gp1_patrol/geometry.hpp"
