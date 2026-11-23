@@ -60,9 +60,6 @@ no mechanism to independently run a patrol log.
 
 ## The Navigation Node and Executables
 
-## The Mission Node, Operator Node, and Launch Files
-
-
 ## R5 Navigation and Timing Evidence - Member B: Andrew Schug
 
 Three trials were conducted using patrol_single_exe and patrol_exe running the same patrol and navigation nodes.
@@ -115,5 +112,20 @@ The navigation callback is supposed to run every 100 ms, but while the logging c
 navigation callback is not executed. This prevents the navigation node from continuously updating the robot's position with
 velocity commands from odometry updates. As a result, the robot may not receive movement commands frequently enough to reach the 
 first checkpoint before the emergency stop command is sent by the operator node. 
+
+
+## R6 The Mission Node, Operator Node  - Member C: Vinay Agarwal
+The Missions node explicit job was to subscribe to packets receive. Hold the last message received and them use that method to publish to the Inspection report. However, each inspection report relied the specific datapoint that was received from Arrival topic msg. After assessing the message we first check whether what we were looking at was a room or a door. Once that was determined we can look at the range of beams. The data we wanted was the middle beam. Therefore we just extracted the middle data point. From this we can select the proper message that we need to publish given the 4 options.
+Only if statements and else statements were use. Also placed logging.
+
+The Operator node has 2 callback function. The first was git called 13 s after the constructor gets call upon. This then set the message for STOP and publishes it. After, another callback gets published and then triggered off after 5 seconds. This is a sequentially triggered event. Once the callback get declared then I delete the pointer to the callbacks one by one.
+
+## R7 Launch Files - Member C: Vinay Agarwal
+The Robot_launch.py files need to contain optionals that would be used for running specific robot at specific times. robot_1 would work not depending on the options sent. Robot 2 would depend on what options were provide to the user.
+
+The patrol_launch.py as similar input as robot_launch file but has additional arguments for launching the robots. This file also logs all the robots together. I add separate log file to test the options. it is in evidence/additional_log_files
+
+## Claude Code Usage 
+  Vinay Agarwal - Used Claude code to debug issues and answer questions about how my written code operates. I did not use claude by copy and pasting code.
 
 The six experiment logs for the single and multi-threaded executor are provided in the evidence/ directory.
