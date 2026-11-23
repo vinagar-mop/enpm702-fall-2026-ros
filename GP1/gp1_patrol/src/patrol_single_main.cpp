@@ -1,3 +1,14 @@
+/**
+ * @file patrol_single_main.cpp
+ * @author Andrew Schug (aschug@umd.edu)
+ * @brief Single-threaded executor to run the navigation and patrol logging nodes.
+ * @version 0.1
+ * @date 2026-11-23
+ * 
+ * @copyright Copyright (c) 2026
+ * 
+ */
+
 #include "gp1_patrol/navigation_node.hpp"
 #include "gp1_patrol/patrol_log_node.hpp"
 

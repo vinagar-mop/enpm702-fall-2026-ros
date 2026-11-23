@@ -58,15 +58,20 @@ The Patrol Log node keeps track of the results of each report the robot publishe
 the number of clear and blocked rooms and the number of open and closed doors. The node logs these values. There is
 no mechanism to independently run a patrol log.
 
-## The Navigation Node and Executables
+## The Navigation Node and Executables : Member B (Andrew Schug)
 
-## The Mission Node, Operator Node, and Launch Files
+AI Usage:
+I used ChatGPT for formatting of the get_logger() output to match the template required for the STOP and RESUME reception
+logging. Additionally, I used ChatGPT to debug and correct my original logic for publishing velocity commands to have 
+the stand-in robot succesfully navigation to each checkpoint under the right conditions.
 
-
-## R5 Navigation and Timing Evidence - Member B: Andrew Schug
+The navigation node is responsible for autonomously navigating the stand-in robot through the four predefined checkpoints
+using odometry feedback. A timber callback executes every 100ms to calculate the distance and heading error between the
+robot's current position and the checkpoint. The node than publishes linear and velocity commands to turn the robot toward
+the checkpoint and drive froward until it is within 0.15 meters of the target. Once the robot gets there, an arrival message
+is published, and it waits for an inspection report to continue to the next checkpoint. The node also subscribes to the the STOP and RESUME emergency commands from the operator node, allowing navigation to be interrupted and then resumed.
 
 Three trials were conducted using patrol_single_exe and patrol_exe running the same patrol and navigation nodes.
-
 The following table contains the STOP command reception delays for both the single and multi-threaded executors.
 The delays were calculated by the navigation node using the difference between the timestamp of the STOP command
 published by the operator node and the time the navigation node processed the command.
@@ -117,3 +122,5 @@ velocity commands from odometry updates. As a result, the robot may not receive 
 first checkpoint before the emergency stop command is sent by the operator node. 
 
 The six experiment logs for the single and multi-threaded executor are provided in the evidence/ directory.
+
+## The Mission Node, Operator Node, and Launch Files
