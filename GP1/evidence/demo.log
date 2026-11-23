@@ -1,0 +1,64 @@
+[INFO] [launch]: All log files can be found below /home/vinay/.ros/log/2026-11-23-09-55-53-715586-vitis-vivado-24610
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: two_robots = false, with_operator = true
+[INFO] [patrol_exe-1]: process started with pid [24634]
+[INFO] [stand_in_robot_exe-2]: process started with pid [24635]
+[INFO] [mission_exe-3]: process started with pid [24636]
+[INFO] [operator_exe-4]: process started with pid [24637]
+[patrol_exe-1] [INFO] [1795445757.291130137] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445759.291151430] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445761.291207139] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[stand_in_robot_exe-2] [INFO] [1795445762.191886806] [robot_1.stand_in_robot_node]: stand-in robot near checkpoint 1
+[patrol_exe-1] [INFO] [1795445762.888734807] [robot_1.navigation_node]: arrived at checkpoint 1
+[mission_exe-3] [INFO] [1795445762.889190890] [robot_1.mission_node]: checkpoint 1 (room): clear, range 4 m
+[patrol_exe-1] [INFO] [1795445762.889381265] [robot_1.navigation_node]: Inspection complete for checkpoint 1. Advancing.
+[patrol_exe-1] [INFO] [1795445763.292246140] [robot_1.patrol_log_node]: patrol log: clear  0, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445765.291626849] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[operator_exe-4] [INFO] [1795445766.778837850] [operator_node]: sent STOP (operator stop)
+[patrol_exe-1] [INFO] [1795445766.779037350] [robot_1.navigation_node]: STOP (operator stop) received 0.3 ms after it was sent
+[patrol_exe-1] [INFO] [1795445767.291073892] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445769.291103185] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445771.290791477] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[operator_exe-4] [INFO] [1795445771.779244394] [operator_node]: sent RESUME (operator resume)
+[patrol_exe-1] [INFO] [1795445771.779398103] [robot_1.navigation_node]: RESUME (operator resume) received 0.2 ms after it was sent
+[patrol_exe-1] [INFO] [1795445773.291443103] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445775.291160354] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445777.290825564] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445779.290995523] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[stand_in_robot_exe-2] [INFO] [1795445779.791933606] [robot_1.stand_in_robot_node]: stand-in robot near checkpoint 2
+[patrol_exe-1] [INFO] [1795445780.688748440] [robot_1.navigation_node]: arrived at checkpoint 2
+[mission_exe-3] [INFO] [1795445780.689004815] [robot_1.mission_node]: checkpoint 2 (room): blocked, range 0.6 m
+[patrol_exe-1] [INFO] [1795445780.689092690] [robot_1.navigation_node]: Inspection complete for checkpoint 2. Advancing.
+[patrol_exe-1] [INFO] [1795445781.291082607] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 0, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445783.291028441] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445785.291114026] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445787.291139652] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445789.291187194] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445791.290862070] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[stand_in_robot_exe-2] [INFO] [1795445792.992038696] [robot_1.stand_in_robot_node]: stand-in robot near checkpoint 3
+[patrol_exe-1] [INFO] [1795445793.291036363] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445793.988636946] [robot_1.navigation_node]: arrived at checkpoint 3
+[mission_exe-3] [INFO] [1795445793.991211155] [robot_1.mission_node]: checkpoint 3 (door): door closed, range 0.6 m
+[patrol_exe-1] [INFO] [1795445793.991872863] [robot_1.navigation_node]: Inspection complete for checkpoint 3. Advancing.
+[patrol_exe-1] [INFO] [1795445795.291285447] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 0
+[patrol_exe-1] [INFO] [1795445797.291053406] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[patrol_exe-1] [INFO] [1795445799.293517282] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[patrol_exe-1] [INFO] [1795445801.293387700] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[patrol_exe-1] [INFO] [1795445803.292424243] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[patrol_exe-1] [INFO] [1795445805.293863535] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[stand_in_robot_exe-2] [INFO] [1795445806.192777202] [robot_1.stand_in_robot_node]: stand-in robot near checkpoint 4
+[patrol_exe-1] [INFO] [1795445807.090502494] [robot_1.navigation_node]: arrived at checkpoint 4
+[mission_exe-3] [INFO] [1795445807.090820328] [robot_1.mission_node]: checkpoint 4 (door): door open, range 4 m
+[patrol_exe-1] [INFO] [1795445807.091018786] [robot_1.navigation_node]: Inspection complete for checkpoint 4. Advancing.
+[patrol_exe-1] [INFO] [1795445807.091054536] [robot_1.navigation_node]: patrol complete
+[patrol_exe-1] [INFO] [1795445807.290977286] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 0, door closed 1
+[patrol_exe-1] [INFO] [1795445809.293974495] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445811.290953996] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445813.293785372] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445815.291163123] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445817.293667999] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445819.291275500] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445821.294000293] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445823.293701544] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445825.293958961] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
+[patrol_exe-1] [INFO] [1795445827.291146504] [robot_1.patrol_log_node]: patrol log: clear  1, blocked 1, door open 1, door closed 1
