@@ -40,7 +40,7 @@ colcon build --packages-up-to gp1_patrol
 source install/setup.bash
 ```
 
-## The Interface Package, Stand In Robot Node, and Patrol Log Node
+## The Interface Package, Stand In Robot Node, and Patrol Log Node - Member A Jacob Collier-Tenison
 
 The interface package 'gp1_interfaces' provides Arrival, InspectionReport, and StopCommand messages.
 It should be included by each node that uses it. The Arrival message indicates when a robot arrives to
@@ -58,18 +58,14 @@ The Patrol Log node keeps track of the results of each report the robot publishe
 the number of clear and blocked rooms and the number of open and closed doors. The node logs these values. There is
 no mechanism to independently run a patrol log.
 
-## The Navigation Node and Executables : Member B (Andrew Schug)
-
-AI Usage:
-I used ChatGPT for formatting of the get_logger() output to match the template required for the STOP and RESUME reception
-logging. Additionally, I used ChatGPT to debug and correct my original logic for publishing velocity commands to have 
-the stand-in robot succesfully navigation to each checkpoint under the right conditions.
-
+## The Navigation Node and Executables - Member B Andrew Schug
 The navigation node is responsible for autonomously navigating the stand-in robot through the four predefined checkpoints
-using odometry feedback. A timber callback executes every 100ms to calculate the distance and heading error between the
+using odometry feedback. A timer callback executes every 100ms to calculate the distance and heading error between the
 robot's current position and the checkpoint. The node than publishes linear and velocity commands to turn the robot toward
 the checkpoint and drive froward until it is within 0.15 meters of the target. Once the robot gets there, an arrival message
 is published, and it waits for an inspection report to continue to the next checkpoint. The node also subscribes to the the STOP and RESUME emergency commands from the operator node, allowing navigation to be interrupted and then resumed.
+
+## R5 Navigation and Timing Evidence - Member B Andrew Schug
 
 Three trials were conducted using patrol_single_exe and patrol_exe running the same patrol and navigation nodes.
 The following table contains the STOP command reception delays for both the single and multi-threaded executors.
@@ -123,4 +119,20 @@ first checkpoint before the emergency stop command is sent by the operator node.
 
 The six experiment logs for the single and multi-threaded executor are provided in the evidence/ directory.
 
-## The Mission Node, Operator Node, and Launch Files
+## R6 The Mission Node, Operator Node - Member C Vinay Agarwal
+The Missions node explicit job was to subscribe to packets receive. Hold the last message received and them use that method to publish to the Inspection report. However, each inspection report relied the specific datapoint that was received from Arrival topic msg. After assessing the message we first check whether what we were looking at was a room or a door. Once that was determined we can look at the range of beams. The data we wanted was the middle beam. Therefore we just extracted the middle data point. From this we can select the proper message that we need to publish given the 4 options.
+Only if statements and else statements were use. Also placed logging.
+
+The Operator node has 2 callback function. The first was git called 13 s after the constructor gets call upon. This then set the message for STOP and publishes it. After, another callback gets published and then triggered off after 5 seconds. This is a sequentially triggered event. Once the callback get declared then I delete the pointer to the callbacks one by one.
+
+## R7 Launch Files - Member C Vinay Agarwal
+The Robot_launch.py files need to contain optionals that would be used for running specific robot at specific times. robot_1 would work not depending on the options sent. Robot 2 would depend on what options were provide to the user.
+
+The patrol_launch.py as similar input as robot_launch file but has additional arguments for launching the robots. This file also logs all the robots together. I add separate log file to test the options. it is in evidence/additional_log_files
+
+## AI Usage Disclosures
+Vinay Agarwal - I used Claude code to debug issues and answer questions about how my written code operates. I did not use claude by copy and pasting code.
+Andrew Schug - I Used ChatGPT for formatting of the get_logger() output to match the template required for the STOP and RESUME reception logging. 
+Additionally, I used ChatGPT to debug and correct my original logic for publishing velocity commands to have 
+the stand-in robot succesfully navigation to each checkpoint under the right conditions.
+Jacob Collier-Tenison - I did not use any AI tools in relation to this project.
