@@ -40,6 +40,14 @@ colcon build --packages-up-to gp1_patrol
 source install/setup.bash
 ```
 
+## Run Demo
+
+From your workspace root (after building)
+```bash
+bash src/gp1_team3/demo.sh
+```
+
+
 ## The Interface Package, Stand In Robot Node, and Patrol Log Node - Member A Jacob Collier-Tenison
 
 The interface package 'gp1_interfaces' provides Arrival, InspectionReport, and StopCommand messages.
