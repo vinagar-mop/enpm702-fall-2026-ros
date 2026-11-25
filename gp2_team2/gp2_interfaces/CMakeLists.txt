@@ -15,13 +15,13 @@ find_package(rosidl_default_generators REQUIRED)
 # below runs only when at least one file is listed: the package builds empty
 # until then.
 set(GP2_INTERFACE_FILES
-  # "msg/DetectedObject.msg"
- "msg/InspectionReport.msg"
-  # "msg/PatrolStatus.msg"
-  # "msg/PatrolCommand.msg"
-  # "msg/CheckpointGoal.msg"
-  # "msg/CheckpointFeedback.msg"
-  # "msg/CheckpointResult.msg"
+  "msg/DetectedObject.msg"
+  "msg/InspectionReport.msg"
+  "msg/PatrolStatus.msg"
+  "msg/PatrolCommand.msg"
+  "msg/CheckpointGoal.msg"
+  "msg/CheckpointFeedback.msg"
+  "msg/CheckpointResult.msg"
 )
 
 # Generates C++ and Python code for each interface file.

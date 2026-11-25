@@ -20,7 +20,7 @@ class PatrolLogNode : public rclcpp::Node {
         PatrolLogNode() 
         : rclcpp::Node("patrol_log_node"), 
           timer_{create_wall_timer(std::chrono::milliseconds(2000), std::bind(&PatrolLogNode::log, this))},
-          report_subscriber_{create_subscription<gp1_interfaces::msg::InspectionReport>("inspection_report", 10, std::bind(&PatrolLogNode::update_counts, this, std::placeholders::_1))}
+          report_subscriber_{create_subscription<gp2_interfaces::msg::InspectionReport>("inspection_report", 10, std::bind(&PatrolLogNode::update_counts, this, std::placeholders::_1))}
         {}
 
     private:
@@ -34,13 +34,13 @@ class PatrolLogNode : public rclcpp::Node {
          * 
          * @param msg The inspection report
          */
-        void update_counts(const gp1_interfaces::msg::InspectionReport &msg);
+        void update_counts(const gp2_interfaces::msg::InspectionReport &msg);
         rclcpp::TimerBase::SharedPtr timer_; // A timer uses to call the log() function every 2 seconds
-        rclcpp::Subscription<gp1_interfaces::msg::InspectionReport>::SharedPtr report_subscriber_; // A subsriber to inspection_report topic
+        rclcpp::Subscription<gp2_interfaces::msg::InspectionReport>::SharedPtr report_subscriber_; // A subsriber to inspection_report topic
         int clear_count_{0}; // Count of clear reports. Starts at 0, always increases.
         int blocked_count_{0}; // Count of blocked reports. Starts at 0, always increases.
         int door_open_count_{0}; //Count of door open reports. Starts at 0, always increases.
         int door_closed_count_{0}; // Count of door closed reports. Starts at 0, always decreases.
 };
 
-} // namespace gp1_patrol
+} // namespace gp2_patrol
