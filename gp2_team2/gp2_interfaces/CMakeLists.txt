@@ -16,7 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 # until then.
 set(GP2_INTERFACE_FILES
   # "msg/DetectedObject.msg"
-  # "msg/InspectionReport.msg"
+ "msg/InspectionReport.msg"
   # "msg/PatrolStatus.msg"
   # "msg/PatrolCommand.msg"
   # "msg/CheckpointGoal.msg"

@@ -24,8 +24,7 @@ find_package(std_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(ros_gz_interfaces REQUIRED)
-# TODO (R1): uncomment once gp2_interfaces builds with your interfaces.
-# find_package(gp2_interfaces REQUIRED)
+find_package(gp2_interfaces REQUIRED)
 
 include_directories(include)
 
